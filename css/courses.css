@@ -1,0 +1,123 @@
+:root {
+	--sidebar-width: 120px;
+	--sidebar-collapsed: 80px;
+	--sidebar-bg: #2c3e50;
+	--sidebar-foreground: #f1c40f;
+	--gap: 20px;
+}
+
+.sidebar-courses {
+	width: 220px;
+	height: 100vh;
+	background: #2c3e50;
+	color: #f1c40f;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	overflow-y: auto;
+}
+
+button {
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #f39c12;
+	border-radius: 10px;
+}
+
+nav.sidebar {
+	width: var(--sidebar-width);
+	height: 100vh;
+	background: var(--sidebar-bg);
+	color: var(--sidebar-foreground);
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	transition: width 200ms ease;
+	overflow-y: auto;
+	box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+	:root {
+		--sidebar-width: 140px;
+	}
+}
+
+main.courses-container {
+	margin-left: var(--sidebar-width);
+	max-width: calc(100% - var(--sidebar-width));
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 16px;
+	align-items: start;
+	transition: margin-left 200ms ease, padding 150ms ease, max-width 200ms ease;
+	box-sizing: border-box;
+}
+
+main.courses-container.block {
+	display: block;
+}
+
+@media (max-width: 768px) {
+	nav.sidebar {
+		width: var(--sidebar-collapsed);
+		padding: 10px;
+	}
+
+	.sidebar {
+		width: var(--sidebar-collapsed);
+		transition: width 200ms ease;
+	}
+
+	.sidebar.collapsed {
+		width: var(--sidebar-collapsed);
+	}
+
+	nav.sidebar .menu-text,
+	nav.sidebar a > span {
+		display: none;
+	}
+
+	main.courses-container {
+		margin-left: var(--sidebar-collapsed);
+		max-width: calc(100% - var(--sidebar-collapsed));
+		padding: 12px;
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+
+	body,
+	html {
+		overflow-x: hidden;
+	}
+
+	button {
+		width: 100%;
+		max-width: none;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1600px) {
+	.courses-container .course-grid,
+	.course-grid {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 18px;
+	}
+
+	.course-section:first-of-type > .course-grid {
+		grid-auto-flow: row;
+	}
+}
+
+@media (min-width: 1601px) {
+	.courses-container .course-grid,
+	.course-grid {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	}
+}

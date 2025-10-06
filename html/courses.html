@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Instructor Luki</title>
+  <link rel="stylesheet" href="../css/courses.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <aside id="sidebar" class="sidebar collapsed" aria-label="Main sidebar">
+    <div class="sidebar-top">
+      <a href="index.html" class="brand">
+        <img src="../images-final-project/ai2 logo.jpg" alt="Instructor Luki logo" class="brand-img">
+        <span class="brand-text">Luki</span>
+      </a>
+
+      <button id="collapseBtn" class="collapse-btn" aria-label="Collapse sidebar" title="Collapse sidebar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFED00" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect y="4" width="24" height="2" rx="1"></rect>
+          <rect y="11" width="24" height="2" rx="1"></rect>
+          <rect y="18" width="24" height="2" rx="1"></rect>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="nav" aria-label="Main navigation">
+      <ul>
+        <li>
+          <a href="index.html" class="nav-link" data-page="home">
+            <span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
+            <span class="nav-label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="courses.html" class="nav-link active" data-page="courses">
+            <span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-book"></i></span>
+            <span class="nav-label">Courses</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link" data-page="contact">
+            <span class="nav-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+            <span class="nav-label">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      <small>© 2025 Instructor Luki</small>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/lukoye-jackson-b86a352a2/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main-courses"></div>
+
+  <main class="courses-container">
+    <section>
+      <h2>Frontend Development</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <img src="../images-final-project/html.logo.jpg" height="70px" width="50px" alt="HTML Course">
+          <div class="course-content">
+            <h3>HTML</h3>
+            <p>Learn the foundation of web pages, covering structure, tags, and elements for modern web design.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="../images-final-project/css.logo.jpg" height="70px" width="50px" alt="CSS Course">
+          <div class="course-content">
+            <h3>CSS</h3>
+            <p>Master styling and layout with modern CSS techniques, including Flexbox, Grid, and animations.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="../images-final-project/java.logo.jpg" height="70px" width="50px" alt="JavaScript Course">
+          <div class="course-content">
+            <h3>JavaScript</h3>
+            <p>Dive into interactive web programming with ES6+, DOM manipulation, and event handling.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="../images-final-project/react icon.jpg" height="70px" width="50px" alt="React Course">
+          <div class="course-content">
+            <h3>React</h3>
+            <p>Build modern UIs using components, props, state, and hooks for scalable web applications.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Backend Development</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <img src="../images-final-project/node js.jpg" height="70px" width="50px" alt="Node.js Course">
+          <div class="course-content">
+            <h3>Node.js</h3>
+            <p>Understand server-side JavaScript, event-driven architecture, and building APIs with Node.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="../images-final-project/express js.jpg" height="70px" width="50px" alt="Express.js Course">
+          <div class="course-content">
+            <h3>Express.js</h3>
+            <p>Learn to build fast, secure, and scalable REST APIs with Express and middleware management.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="../images-final-project/Djago.jpg" height="70px" width="50px" alt="Django Course">
+          <div class="course-content">
+            <h3>Django</h3>
+            <p>Build secure, scalable apps using Python’s powerful Django framework for rapid development.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Database Technologies</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <img src="../images-final-project/mongodb.jpg" height="70px" width="50px" alt="MongoDB Course">
+          <div class="course-content">
+            <h3>MongoDB</h3>
+            <p>Explore NoSQL concepts with MongoDB, focusing on collections, documents, and queries.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="../images-final-project/My SQL.jpg" height="70px" width="50px" alt="NoSQL Course">
+          <div class="course-content">
+            <h3>NoSQL</h3>
+            <p>Understand flexible schemas, scalability, and modern database approaches beyond relational SQL.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Developer Tools</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <img src="../images-final-project/github logo.jpg" height="70px" width="50px" alt="Git Course">
+          <div class="course-content">
+            <h3>Git & GitHub</h3>
+            <p>Master version control, collaboration, and open-source workflows with Git and GitHub.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="../images-final-project/vs code.jpg" height="70px" width="50px" alt="VS Code Course">
+          <div class="course-content">
+            <h3>VS Code</h3>
+            <p>Boost productivity by learning shortcuts, extensions, and workflows in Visual Studio Code.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="../images-final-project/figma icn.jpg" height="70px" width="50px" alt="Figma Design">
+          <div class="course-content">
+            <h3>Figma Design</h3>
+            <p>Learn collaborative UI/UX design with Figma—prototyping, components, and design systems.</p>
+            <button class="btn enroll">ENROLL NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Learning Roadmaps</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <img src="../images-final-project/Frontend icn.jpg" height="70px" width="50px" alt="Frontend Roadmap">
+          <div class="course-content">
+            <h3>Frontend Roadmap</h3>
+            <p>Step-by-step guide to becoming a frontend developer. Includes HTML, CSS, JS, and React.</p>
+            <a href="https://roadmap.sh/pdfs/roadmaps/frontend.pdf" target="_blank" download class="download-btn">Download Roadmap</a>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="../images-final-project/backend icn.jpg" height="70px" width="50px" alt="Backend Roadmap">
+          <div class="course-content">
+            <h3>Backend Roadmap</h3>
+            <p>A structured path covering Node.js, Express, databases, and authentication systems.</p>
+            <a href="https://roadmap.sh/pdfs/roadmaps/backend-beginner.pdf" target="_blank" download class="download-btn">Download Roadmap</a>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="../images-final-project/Fullstack Chart.jpg" height="70px" width="50px" alt="Fullstack Roadmap">
+          <div class="course-content">
+            <h3>Fullstack Roadmap</h3>
+            <p>Combine frontend + backend skills into fullstack mastery. Covers MERN stack & beyond.</p>
+            <a href="..https://roadmap.sh/pdfs/roadmaps/full-stack.pdf" target="_blank" download class="download-btn">Download Roadmap</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Enrollment popup -->
+  <div id="enrollOverlay" class="enroll-overlay" aria-hidden="true">
+    <div class="enroll-popup" role="dialog" aria-modal="true" aria-labelledby="enrollTitle">
+      <button class="enroll-close" aria-label="Close">×</button>
+      <h3 id="enrollTitle">Enrollment request sent</h3>
+      <p>Thank you; your enrollment request was received.</p>
+    </div>
+  </div>
+
+  <script src="../Js/script.js"></script>
+  <!-- Mobile copyright: shown only on small screens -->
+  <div class="mobile-copyright" aria-hidden="true">© 2025 Instructor Luki</div>
+  <!-- WhatsApp floating button -->
+  <a class="whatsapp-fab" href="https://api.whatsapp.com/send?phone=+254710520097&text=Hello+developer+Lukii" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+</body>
+</html>
